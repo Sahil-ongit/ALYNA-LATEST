@@ -61,6 +61,14 @@ body {
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
 }
 
+.signup-page .form-label {
+  color: #d6b075;
+  font-weight: 600;
+  background-color: #0d1b2a!important;
+  padding: 6px 12px;
+  border-radius: 8px;
+  display: inline-block;
+}
 .signup-left {
   position: relative;
   width: 35%;
@@ -244,14 +252,14 @@ body {
   position: relative;
 }
 
-.input-group::before {
+.login-page .input-group::before {
   content: "";
   position: absolute;
   left: 0;
   top: 0.5px;
   bottom: 0.5px;
   width: 4px;
-  background-color: #265fdd;
+  background-color: #265fdd !important;
   border-radius: 3px;
 }
 
@@ -487,7 +495,7 @@ body {
 
 .btn-dark-blue {
   background-color: #001F3F;
-  color: red;
+  color: white;
 }
 
 .profile-img {
@@ -654,11 +662,6 @@ body {
 }
 
 @media (max-width: 1280px) {
-  .show-more-btn {
-    margin-bottom: 4rem !important;
-  }
-}
-@media (max-width: 1400px) {
   .show-more-btn {
     margin-bottom: 4rem !important;
   }
@@ -846,4 +849,126 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
+}
+
+/* === Cleaning Subscription Page Styles === */
+.bg-tan {
+  background-color: #d6b075;
+}
+
+.subscription-box {
+  background-color: #ffffff;
+  border-radius: 1.2rem;
+  padding: 2rem;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Dropdown & Filter Buttons */
+.btn-outline-dark {
+  border: none;
+  background-color: #d6b075;
+  color: #000;
+}
+
+.btn-outline-dark:hover {
+  background-color: #c6a56f;
+  color: #000;
+}
+
+/* Day Buttons */
+.day-btn {
+  background-color: #d6b075;
+  color: #000;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.day-btn:hover {
+  background-color: #c6a56f;
+  color: #000;
+}
+
+.day-btn.active {
+  background-color: #0d1b2a;
+  color: #ffffff;
+}
+
+
+/* Alyna’s Pick Badge */
+.subscription-box .alyna-pick {
+  font-weight: 600;
+  color: #0d1b2a;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+body.subscription-page {
+  display: block;
+  height: auto;
+  overflow-x: hidden;
+  padding: 0;
+}
+
+.day-btn {
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  margin: 0.2rem;
+}
+
+.day-btn.active {
+  background-color: #0d1b2a;
+  color: white;
+}
+
+.form-select,
+.form-control {
+  border-radius: 10px;
+}
+
+.subscription-page .form-label {
+  color: #d6b075;
+  font-weight: 600;
+  background-color: white !important;
+  padding: 6px 12px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.subscriptions-page.input-group::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5px;
+  bottom: 0.5px;
+  width: 4px;
+  background-color: #d6b075 !important; /* Tan */
+  border-radius: 3px;
+}
+
+.location-group::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5px;
+  bottom: 0.5px;
+  width: 4px;
+  background-color: #ffffff !important; /* Tan */
+  border-radius: 3px;
+}
+.day-btn {
+  padding: 0.5rem 1.25rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  min-width: 72px;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+body.subscription-page {
+  min-height: 100vh;
+  height: auto;
+  overflow-y: auto;
+  display: block;
 }

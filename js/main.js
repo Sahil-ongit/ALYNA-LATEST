@@ -85,3 +85,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+
+// === cleaning-subscription  Specific Logic ===
+
+
+document.querySelectorAll('.day-btn').forEach(button => {
+  button.addEventListener('click', function () {
+    this.classList.toggle('active');
+    if (this.classList.contains('active')) {
+      this.classList.remove('bg-tan', 'text-dark');
+      this.classList.add('bg-dark', 'text-white');
+    } else {
+      this.classList.remove('bg-dark', 'text-white');
+      this.classList.add('bg-tan', 'text-dark');
+    }
+  });
+});
+
