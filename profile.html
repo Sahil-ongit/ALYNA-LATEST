@@ -16,27 +16,41 @@
 <body class="appointment-body">
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar px-3">
-    <div class="d-flex flex-column justify-content-center me-3">
-      <img src="images/logo.png" alt="Logo" style="height: 40px;">
-      <img src="images/alyna.png" alt="Alyna" style="height: 20px; margin-top: 2px;">
-    </div>
-
+  <nav class="navbar navbar-expand-xl navbar-dark custom-navbar px-3">
+    <a class="navbar-brand d-flex align-items-center me-3" href="#">
+      <img src="images/logo.png" alt="Logo" height="60px">
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="navbarMain">
       <div class="navbar-nav mx-auto custom-nav-links">
-        <a class="nav-link" href="appointment.html">Cleaning</a>
+        <a class="nav-link active" href="appointment.html">Cleaning</a>
         <a class="nav-link" href="cleaning-subscription.html">Subscriptions</a>
-        <a class="nav-link" href="#">Offers</a>
-        <a class="nav-link" href="#"><i class="bi bi-cart"></i> Cart <span
-            class="badge bg-primary rounded-pill">3</span></a>
+        <a class="nav-link" href="offer.html">Offers</a>
+        <a class="nav-link" href="cart_n.html">Cart <span class="badge bg-primary rounded-pill">3</span></a>
       </div>
       <div class="d-flex align-items-center gap-3">
-        <a class="nav-link text-white" href="#"><i class="bi bi-person-circle fs-5"></i></a>
-        <a class="nav-link text-white" href="#"><i class="bi bi-translate fs-5"></i></a>
+        <a class="nav-link text-white" href="profile.html"><i class="bi bi-person-circle fs-5"></i></a>
+        <div class="dropdown">
+          <button class="btn bg-transparent p-0 border-0 dropdown-toggle" type="button" id="languageDropdown"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="images/language_icon.png" alt="English" height="20px" class="me-1">
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <img src="images/united-kingdom.png" alt="English" height="20px" class="me-2"> English
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <img src="images/united-arab-emirates.png" alt="Arabic" height="20px" class="me-2"> Arabic
+              </a>
+            </li>
+          </ul>
+        </div>
+
       </div>
     </div>
   </nav>
