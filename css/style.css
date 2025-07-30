@@ -972,3 +972,185 @@ body.subscription-page {
   overflow-y: auto;
   display: block;
 }
+
+
+
+/* === OFFERS SECTION === */
+
+/* Background */
+body {
+  background-color: #c6a56f;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #001122;
+}
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff !important;
+}
+.nav-link {
+  color: #fcd581 !important;
+  font-weight: 500;
+}
+.nav-link.active {
+  color: #ffffff !important;
+}
+
+/* Offers container */
+.offer-container {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 40px auto;
+}
+
+/* Coupon input group */
+.input-group .form-control {
+  border-radius: 10px 0 0 10px;
+  border: 1px solid #ccc;
+}
+.input-group .btn {
+  border-radius: 0 10px 10px 0;
+  background-color: #ccc;
+  border: none;
+  color: white;
+  font-weight: 500;
+}
+
+/* Offer card */
+.offer-card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 15px;
+}
+
+/* Coupon code button */
+.btn-code {
+  background-color: #c6a577;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 6px 14px;
+  border: none;
+}
+
+/* View details link */
+.view-details {
+  font-size: 0.8rem;
+  color: #333;
+  text-decoration: underline;
+}
+
+/* Applied message */
+.applied {
+  color: #00a66f;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* Proceed button */
+.btn-proceed {
+  background-color: #001122;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-weight: 600;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Fade In Animation */
+@keyframes fadeInBottomLeft {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Base Style */
+.coupon-icon-bottom-left {
+  position: fixed;
+  bottom: 100px;
+  left: 100px;
+  width: 200px;
+  opacity: 0;
+  z-index: 0;
+  animation: fadeInBottomLeft 1.5s ease-out forwards;
+  pointer-events: none;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .coupon-icon-bottom-left {
+    width: 90px;
+    bottom: 15px;
+    left: 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .coupon-icon-bottom-left {
+    width: 100px;
+    bottom: 10px;
+    left: 10px;
+  }
+}
+
+.offer-details-card {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.offer-details-card-button{
+  background-color: #c6a56f;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 6px 14px;
+  border: none;
+}
+
+body.offer-page {
+  display: block;         /* Reset to default layout */
+  align-items: unset;
+  justify-content: unset;
+  height: auto;
+  overflow: auto;
+}
+
+@media (max-width: 768px) {
+  .coupon-icon-bottom-left {
+    width: 90px;
+    bottom: 15px;
+    left: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .coupon-icon-bottom-left {
+    width: 80px;
+    bottom: 10px;
+    left: 10px;
+  }
+}
+
+/* Reduce size for shorter viewports even if width is wide */
+@media (max-height: 700px) {
+  .coupon-icon-bottom-left {
+    width: 120px;
+    bottom: 20px;
+    left: 20px;
+  }
+}
