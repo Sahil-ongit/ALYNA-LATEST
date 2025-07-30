@@ -1285,3 +1285,60 @@ body.cart-page {
   padding: 6px 14px;
   border: none;
 }
+
+/* === Name Page Styles === */
+.filter-bar {
+  background-color: #0d1b2a;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-cleaner {
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.card-cleaner img.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.btn-add-cart {
+  background-color: #0d1b2a;
+  color: white;
+  font-weight: 600;
+  font-size: 0.85rem;
+  border-radius: 0.75rem;
+  padding: 0.5rem 1rem;
+}
+
+.badge-cart {
+  background-color: #3272ff;
+  font-size: 0.7rem;
+}
+
+body.subscription-page {
+  display: block;
+  min-height: 100vh;
+  overflow-x: hidden;
+  padding: 0;
+  background-color: #c6a56f;
+  background-image: url('../images/bg_image.png');
+  background-repeat: repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  font-family: 'Poppins', 'Roboto', 'Inter', sans-serif;
+}
