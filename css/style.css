@@ -1115,7 +1115,6 @@ body {
 
 .offer-details-card-button{
   background-color: #c6a56f;
-  color: white;
   font-weight: bold;
   border-radius: 8px;
   padding: 6px 14px;
@@ -1153,4 +1152,11 @@ body.offer-page {
     bottom: 20px;
     left: 20px;
   }
+}
+
+.offer-details-card-button:hover {
+  background-color: #c6a56f; /* same as default */
+  color: inherit;            /* maintain current text color */
+  transform: none;           /* prevent any scaling or animation */
+  box-shadow: none;          /* prevent any hover shadow */
 }
