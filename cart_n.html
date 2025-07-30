@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cart Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="cart-page bg-tan">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-xl navbar-dark custom-navbar px-3">
+        <a class="navbar-brand d-flex align-items-center me-3" href="#">
+            <img src="images/logo.png" alt="Logo" height="60px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMain">
+            <div class="navbar-nav mx-auto custom-nav-links">
+                <a class="nav-link" href="#">Cleaning</a>
+                <a class="nav-link" href="cleaning-subscription.html">Subscriptions</a>
+                <a class="nav-link" href="offer.html">Offers</a>
+                <a class="nav-link active" href="cart_n.html">Cart <span
+                        class="badge bg-primary rounded-pill">3</span></a>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+                <a class="nav-link text-white" href="profile.html"><i class="bi bi-person-circle fs-5"></i></a>
+                <div class="dropdown">
+                    <button class="btn bg-transparent p-0 border-0 dropdown-toggle" type="button" id="languageDropdown"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="images/language_icon.png" alt="English" height="20px" class="me-1">
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <img src="images/united-kingdom.png" alt="English" height="20px" class="me-2"> English
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <img src="images/united-arab-emirates.png" alt="Arabic" height="20px" class="me-2">
+                                Arabic
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cart Section -->
+    <div class="container my-4">
+        <div class="bg-white p-3 rounded shadow mb-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <p class="fw-bold mb-0">Cart</p>
+                <button
+                    class="btn btn-sm rounded-pill px-3 py-1 mt-2 text-dark fw-semibold offer-details-card-button">0.000
+                    KWD</button>
+            </div>
+            <br>
+            <div class="d-flex justify-content-between">
+
+                <p class="fw-bold mb-0">Cleaning</p>
+                <div class="dropdown laundry-dropdown">
+                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button"
+                        data-bs-toggle="dropdown">
+                        Laundry item
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Laundry item</a></li>
+                        <li><a class="dropdown-item" href="#">Dry Clean</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <div class="mt-2">
+                <hr>
+                <p class="mb-1 fw-bold">Alyna Pickup</p>
+
+                <div class="d-flex justify-content-between">
+
+                    <p class="fw-bold mb-0">Cleaning</p>
+                    <div class="dropdown qty-dropdown">
+                        <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button"
+                            data-bs-toggle="dropdown">
+                            QTY: 1
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">QTY: 1</a></li>
+                            <li><a class="dropdown-item" href="#">QTY: 2</a></li>
+                            <li><a class="dropdown-item" href="#">QTY: 3</a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+                <p class="mb-1">Cleaning + Brushing</p>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center">
+                    <p class="fw-bold mb-0">Pay Later</p>
+                    <button class="btn btn-outline-dark btn-sm">Remove item</button>
+                </div>
+                <small class="text-muted">Price will be calculated after pickup</small>
+            </div>
+        </div>
+
+        <!-- Address Section -->
+        <div class="bg-white p-3 rounded shadow mb-3">
+            <h6 class="fw-bold">Address</h6>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" checked>
+                <label class="form-check-label fw-bold">Address:1</label>
+            </div>
+        </div>
+
+        <!-- Address Section -->
+        <div class="bg-white p-3 rounded shadow mb-3">
+            <div class="form-check mt-2">
+                <input type="checkbox" class="form-check-input me-2" id="terms">
+                <label class="form-check-label">New Address</label>
+            </div>
+            <hr>
+            <input type="text" class="form-control mt-2 py-3" placeholder="Add New Address">
+        </div>
+
+        <!-- Comments -->
+        <div class="bg-white p-3 rounded shadow mb-3">
+
+            <div class="d-flex align-items-center mb-3">
+                <input type="checkbox" class="form-check-input me-2" id="terms">
+                <label for="terms" class="form-check-label">Comments</label>
+            </div>
+            <hr>
+            <textarea class="form-control" rows="2" placeholder="Add your comments"></textarea>
+        </div>
+
+        <!-- Payment Method -->
+        <div class="bg-white p-3 rounded shadow mb-3">
+            <h6 class="fw-bold">Payment Method</h6>
+            <hr>
+            <div class="form-check d-flex align-items-center gap-2">
+                <input type="checkbox" class="form-check-input me-2" id="terms">
+                <img src="images/knet.png" alt="KNET" height="50">
+            </div>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+                <span>Have a promo code? Apply now</span>
+                <button class="btn btn-outline-secondary btn-sm">Apply Coupon</button>
+            </div>
+        </div>
+
+        <!-- Price Details -->
+        <div class="bg-white p-3 rounded shadow mb-3">
+            <h6 class="fw-bold">Price Detail</h6>
+            <hr>
+            <div class="d-flex justify-content-between"><span>Laundry Total</span><span>0.000KWD</span></div>
+            <div class="d-flex justify-content-between text-success"><span>Discount</span><span>0.000KWD</span></div>
+            <div class="d-flex justify-content-between"><span>Delivery Charge</span><span>0.000KWD</span></div>
+            <small class="text-muted">(Expected delivery by Sunday, June 22)</small>
+            <div class="d-flex justify-content-between fw-bold text-danger mt-2"><span>Total
+                    Amount</span><span>0.000KWD</span></div>
+        </div>
+
+        <!-- Terms & Checkout -->
+        <div class="d-flex align-items-center mb-3">
+            <input type="checkbox" class="form-check-input me-2" id="terms">
+            <label for="terms" class="form-check-label text-dark">Terms & Conditions</label>
+        </div>
+        <div class="d-flex justify-content-between align-items-center bg-white p-3 rounded shadow">
+            <span class="fw-bold text-danger">0.000KWD</span>
+            <button class="btn btn-outline-dark rounded-pill px-4">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

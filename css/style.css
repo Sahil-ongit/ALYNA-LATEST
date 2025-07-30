@@ -1160,3 +1160,128 @@ body.offer-page {
   transform: none;           /* prevent any scaling or animation */
   box-shadow: none;          /* prevent any hover shadow */
 }
+
+
+/* === Cart Page Styles === */
+.cart-box {
+  background-color: #ffffff;
+  border-radius: 1.2rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1.5rem;
+}
+
+.cart-section-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0d1b2a;
+  margin-bottom: 1rem;
+}
+
+.cart-item {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  margin-bottom: 1rem;
+}
+
+.cart-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  color: #0d1b2a;
+}
+
+.cart-item-subtext {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.cart-item-price-badge {
+  background-color: #d6b075;
+  color: #0d1b2a;
+  border-radius: 1rem;
+  padding: 0.25rem 0.75rem;
+  font-weight: 600;
+}
+
+.address-option,
+.payment-option {
+  background-color: #fff;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.address-option input[type="radio"],
+.payment-option input[type="radio"] {
+  accent-color: #0d1b2a;
+}
+
+.new-address-input,
+.comments-input {
+  font-style: italic;
+  border-radius: 0.75rem;
+}
+
+.apply-coupon-btn {
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  padding: 0.25rem 1rem;
+}
+
+.price-summary {
+  font-weight: 500;
+  color: #0d1b2a;
+}
+
+.price-summary .text-success {
+  color: #00aa00 !important;
+}
+
+.price-summary .text-danger {
+  color: red !important;
+}
+
+.checkout-total {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: red;
+}
+
+.terms-check {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  font-weight: 500;
+  color: #0d1b2a;
+}
+
+.checkout-btn {
+  width: 100%;
+  padding: 0.75rem;
+  font-weight: 600;
+  border-radius: 1.5rem;
+  background-color: #0d1b2a;
+  color: #fff;
+}
+
+body.cart-page {
+  display: block !important;
+  align-items: unset !important;
+  justify-content: unset !important;
+  height: auto !important;
+  overflow: auto !important;
+}
+
+.cart-kwd-button {
+  background-color: #c6a56f;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 6px 14px;
+  border: none;
+}

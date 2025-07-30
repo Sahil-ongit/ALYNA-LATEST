@@ -103,3 +103,33 @@ document.querySelectorAll('.day-btn').forEach(button => {
   });
 });
 
+
+
+// === cart  Specific Logic ===
+
+
+// Update dropdown button text on selection
+document.addEventListener("DOMContentLoaded", function () {
+  // For Laundry Item dropdown
+  const laundryDropdownItems = document.querySelectorAll(".laundry-dropdown .dropdown-item");
+  const laundryButton = document.querySelector(".laundry-dropdown .dropdown-toggle");
+
+  laundryDropdownItems.forEach(item => {
+    item.addEventListener("click", function (e) {
+      e.preventDefault();
+      laundryButton.textContent = this.textContent;
+    });
+  });
+
+  // For QTY dropdown
+  const qtyDropdownItems = document.querySelectorAll(".qty-dropdown .dropdown-item");
+  const qtyButton = document.querySelector(".qty-dropdown .dropdown-toggle");
+
+  qtyDropdownItems.forEach(item => {
+    item.addEventListener("click", function (e) {
+      e.preventDefault();
+      qtyButton.textContent = this.textContent;
+    });
+  });
+});
+
