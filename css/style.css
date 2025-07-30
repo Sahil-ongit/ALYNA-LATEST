@@ -1414,3 +1414,150 @@ body.subscription-page {
   padding: 6px 14px;
   border: none;
 }
+
+
+/* === Edit Profile Page Styles === */
+body.profile-page {
+  background-color: #c6a56f;
+  background-image: url('../images/bg_image.png');
+  background-repeat: repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  font-family: 'Poppins', 'Roboto', 'Inter', sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: block !important;
+  align-items: unset !important;
+  justify-content: unset !important;
+  height: auto !important;
+  overflow: auto !important;
+}
+
+.input-borderless {
+  border: none;
+  outline: none;
+  background-color: transparent; /* Optional: matches background */
+  box-shadow: none;              /* Remove Bootstrap shadows */
+}
+
+.navbar {
+  background-color: #0d1b2a;
+}
+
+.navbar .nav-link,
+.navbar .nav-link i {
+  color: #c6a56f !important;
+  font-weight: 500;
+}
+
+
+
+.navbar .badge {
+  background-color: #3272ff;
+}
+
+.profile-section {
+  background-color: #ffffff;
+  border-radius: 1.2rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1.5rem;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-avatar {
+  width: 70px;
+  height: 70px;
+  background-color: #d6b075;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-avatar i {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.profile-user h5 {
+  margin: 0;
+  font-weight: 600;
+  color: #0d1b2a;
+}
+
+.btn-edit-image {
+  background-color: #d6b075;
+  color: #0d1b2a;
+  font-weight: 600;
+  border-radius: 2rem;
+}
+
+.profile-profile-form-label {
+  color: #0d1b2a;
+  font-weight: 600;
+  background-color: white !important;
+}
+
+.form-control {
+  border-radius: 0.75rem;
+  font-style: italic;
+}
+
+.btn-update {
+  background-color: #0d1b2a;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+}
+
+.profile-edit-img-card-button {
+  background-color: #c6a56f;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 6px 14px;
+  border: none;
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  .profile-user {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-avatar {
+    width: 60px;
+    height: 60px;
+  }
+
+  .profile-user h5 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  /* Align avatar icon to the left */
+  .mobile-left-align {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+  }
+
+  /* Align button to the right */
+  .mobile-right-align {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    display: block;
+  }
+}

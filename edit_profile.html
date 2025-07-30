@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-tan profile-page">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-xl navbar-dark custom-navbar px-3">
+    <a class="navbar-brand d-flex align-items-center me-3" href="#">
+      <img src="images/logo.png" alt="Logo" height="60px">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <div class="navbar-nav mx-auto custom-nav-links text-center text-xl-start">
+        <a class="nav-link" href="appointment.html">Cleaning</a>
+        <a class="nav-link" href="cleaning-subscription.html">Subscriptions</a>
+        <a class="nav-link" href="offer.html">Offers</a>
+        <a class="nav-link" href="cart_n.html">Cart <span class="badge bg-primary rounded-pill">3</span></a>
+      </div>
+      <div class="d-flex align-items-center gap-3 mt-3 mt-xl-0 justify-content-center justify-content-xl-end">
+        <a class="nav-link text-white" href="profile.html"><i class="bi bi-person-circle fs-5"></i></a>
+        <div class="dropdown">
+          <button class="btn bg-transparent p-0 border-0 dropdown-toggle" type="button" id="languageDropdown"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="images/language_icon.png" alt="English" height="20px" class="me-1">
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <img src="images/united-kingdom.png" alt="English" height="20px" class="me-2"> English
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <img src="images/united-arab-emirates.png" alt="Arabic" height="20px" class="me-2"> Arabic
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Profile Header Card -->
+  <div class="container my-4">
+    <div class="bg-white p-3 rounded-4 shadow">
+
+      <!-- Top Header -->
+      <div class="d-flex justify-content-between align-items-center mb-3 profile-header-card flex-wrap">
+        <h6 class="fw-semibold mb-2 mb-sm-0">
+          <i class="bi bi-person me-2"></i>Edit Profile
+        </h6>
+        <button class="btn btn-sm text-dark fw-semibold rounded-pill profile-edit-img-card-button px-3 py-1">
+          Edit Profile Image
+        </button>
+      </div>
+
+
+
+
+
+      <!-- User Info -->
+      <div class="d-flex flex-column flex-md-row align-items-center gap-3">
+        <!-- Avatar Icon -->
+        <div
+          class="settings-details-card-button rounded-4 p-3 d-flex justify-content-center align-items-center mx-auto mx-md-0"
+          style="width: 70px; height: 70px;">
+          <i class="bi bi-person fs-2 text-white"></i>
+        </div>
+
+        <!-- Name and Pencil Icon in a new column for mobile -->
+        <div
+          class="d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-start gap-1 w-100 text-center text-md-start">
+          <div class="flex-grow-1">
+            <h5 class="mb-0">Abdullah Ahmed</h5>
+          </div>
+          <i class="bi bi-pencil-square text-muted d-block"></i>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+  <!-- Profile Form -->
+  <div class="container pb-4">
+    <div class="bg-white p-4 rounded-4 shadow">
+
+      <!-- Info Header -->
+      <div class="d-flex align-items-center gap-3 mb-4">
+        <h5 class="mb-0">Update your info</h5>
+      </div>
+
+      <form>
+        <div class="mb-3">
+          <!-- Label and icon in same row -->
+          <div class="d-flex justify-content-between align-items-center mb-1">
+            <label for="name" class="profile-profile-form-label fw-semibold mb-0">Your Name</label>
+            <i class="bi bi-pencil-square text-muted"></i>
+          </div>
+          <input type="text" class="form-control input-borderless" id="name" value="Mr. Abdullah Ahmed">
+        </div>
+
+
+        <div class="mb-3">
+          <!-- Flex container for label and icon -->
+          <div class="d-flex justify-content-between align-items-center mb-1">
+            <label for="phone" class="profile-profile-form-label fw-semibold mb-0">Phone</label>
+            <i class="bi bi-pencil-square text-muted"></i>
+          </div>
+
+          <!-- Input field -->
+          <input type="tel" class="form-control input-borderless" id="phone" value="12212233">
+        </div>
+
+
+        <div class="mb-3">
+          <!-- Label and Icon in the same row -->
+          <div class="d-flex justify-content-between align-items-center mb-1">
+            <label for="address" class="profile-profile-form-label fw-semibold mb-0">Add new address</label>
+            <i class="bi bi-pencil-square text-muted"></i>
+          </div>
+
+          <!-- Textarea field -->
+          <textarea class="form-control input-borderless" id="address" rows="2">Ahmadi</textarea>
+        </div>
+
+
+        <div class="mb-4">
+          <!-- Label and Icon in same row -->
+          <div class="d-flex justify-content-between align-items-center mb-1">
+            <label for="password" class="profile-profile-form-label fw-semibold mb-0">Forget or Change Password</label>
+            <i class="bi bi-pencil-square text-muted"></i>
+          </div>
+
+          <!-- Input field -->
+          <input type="password" class="form-control input-borderless" id="password" value="***************">
+        </div>
+
+
+      </form>
+
+    </div>
+    <br>
+    <div class="d-flex justify-content-center">
+      <button type="submit" class="btn btn-dark w-25 rounded-pill fw-semibold py-2">Update</button>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
