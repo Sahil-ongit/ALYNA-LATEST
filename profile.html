@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS & Icons -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css"> <!-- Optional -->
+</head>
+
+<body class="appointment-body">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar px-3">
+    <div class="d-flex flex-column justify-content-center me-3">
+      <img src="images/logo.png" alt="Logo" style="height: 40px;">
+      <img src="images/alyna.png" alt="Alyna" style="height: 20px; margin-top: 2px;">
+    </div>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <div class="navbar-nav mx-auto custom-nav-links">
+        <a class="nav-link" href="appointment.html">Cleaning</a>
+        <a class="nav-link" href="cleaning-subscription.html">Subscriptions</a>
+        <a class="nav-link" href="#">Offers</a>
+        <a class="nav-link" href="#"><i class="bi bi-cart"></i> Cart <span
+            class="badge bg-primary rounded-pill">3</span></a>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <a class="nav-link text-white" href="#"><i class="bi bi-person-circle fs-5"></i></a>
+        <a class="nav-link text-white" href="#"><i class="bi bi-translate fs-5"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Profile Section -->
+  <div class="container my-4">
+    <div class="bg-white p-3 rounded-4 shadow mb-4">
+      <div class="d-flex justify-content-between align-items-center">
+        <h5 class="fw-bold mb-0"><i class="bi bi-person-circle me-2"></i>Profile</h5>
+        <div class="d-flex align-items-center ">
+          <button class="btn btn-link text-dark"><i class="bi bi-pencil-square"></i></button>
+          <button class="btn btn-link text-dark"><a href="settings.html"><i class="bi bi-gear"></i></a></button>
+          <span class="badge rounded-pill  text-dark px-3 py-2 settings-details-card-button">0.000 KWD</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- User Card -->
+    <div class="bg-white p-3 rounded-4 shadow mb-4 d-flex align-items-center gap-3">
+      <div class="settings-details-card-button rounded-4 p-3 d-flex justify-content-center align-items-center"
+        style="width: 70px; height: 70px;">
+        <i class="bi bi-person fs-2 text-white"></i>
+      </div>
+      <div class="flex-grow-1">
+        <h5 class="mb-0">Abdullah Ahmed</h5>
+      </div>
+      <i class="bi bi-chevron-down text-secondary"></i>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="bg-white rounded-4 shadow mb-3">
+      <div class="accordion" id="contactAccordion">
+        <div class="accordion-item border-0">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#contactCollapse">
+              Contact info
+            </button>
+          </h2>
+          <div id="contactCollapse" class="accordion-collapse collapse" data-bs-parent="#contactAccordion">
+            <div class="accordion-body">
+              
+              <div class="d-flex justify-content-between mb-2">
+                <span><i class="bi bi-telephone me-2"></i>Phone</span>
+                <span class="text-muted">22442200</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <span><i class="bi bi-envelope me-2"></i>Email</span>
+                <span class="text-muted">tahersagwadiya53@gmail.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Address Section -->
+    <div class="bg-white rounded-4 shadow">
+      <div class="accordion" id="addressAccordion">
+        <div class="accordion-item border-0">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#addressCollapse">
+              Address
+            </button>
+          </h2>
+          <div id="addressCollapse" class="accordion-collapse collapse" data-bs-parent="#addressAccordion">
+            <div class="accordion-body">
+              
+              <div class="mb-3"><i class="bi bi-square-fill me-2 text-secondary"></i>Address: 1</div>
+              <hr>
+              <div class="mb-3"><i class="bi bi-square-fill me-2 text-secondary"></i>Address: 2</div>
+              <hr>
+              <div class="mb-3"><i class="bi bi-square-fill me-2 text-secondary"></i>Address: 3</div>
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
