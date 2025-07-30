@@ -1561,3 +1561,100 @@ body.profile-page {
     display: block;
   }
 }
+
+
+/* === Help Center Page Styles === */
+
+ .search-bar {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 0.75rem 1rem;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .search-bar i {
+      font-size: 1.2rem;
+      color: #0d1b2a;
+      margin-right: 0.5rem;
+    }
+
+    .help-hero {
+      background: linear-gradient(to bottom right, rgba(13, 46, 82, 0.5), rgba(2, 32, 65, 0.6)),
+        url('../images/contactus_banner.jpg') no-repeat center center;
+      background-size: cover;
+      color: white;
+      border-radius: 1rem;
+      padding: 6rem 1.5rem;
+      text-align: center;
+    }
+
+    .help-hero h2 {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #f1c27d;
+    }
+
+    .help-hero h4 {
+      font-weight: 500;
+      color: #f1c27d;
+      margin-bottom: 0.75rem;
+    }
+
+    .contact-card {
+      background: white;
+      border-radius: 1rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .contact-item {
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid #eee;
+    }
+
+    .contact-item:first-of-type {
+      border-top: none;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 1rem 0;
+    }
+
+    .social-icons i {
+      font-size: 1.5rem;
+    }
+
+    .icon-dark-primary {
+      color: #0d1b2a !important;
+    }
+
+    @media (max-width: 576px) {
+      .contact-item {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 1rem;
+        text-align: left;
+      }
+
+      .contact-item span {
+        flex-grow: 1;
+        text-align: center;
+      }
+
+      .help-hero {
+        padding: 4rem 1rem;
+      }
+
+      .search-bar {
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+      }
+    }
