@@ -12,6 +12,47 @@ body {
   justify-content: center;
   overflow: hidden;
 }
+.custom-offcanvas {
+  background-color: #0d1b2a;
+  color: white;
+}
+
+.custom-offcanvas .nav-link {
+  color: white;
+}
+
+.custom-offcanvas .nav-link:hover {
+  color: #f1c27d;
+}
+.custom-offcanvas .nav-link.active {
+  background-color: #ffffff !important;
+  color: #0d1b2a !important;  /* Ensure the text color is visible */
+  border-radius: 999px;
+  font-weight: 600;
+  padding: 6px 16px;
+  display: inline-block;
+  text-align: center;
+}
+.custom-navbar {
+  position: relative; /* for absolute positioning of center logo */
+  background-color: #0d1b2a;
+  min-height: 70px;
+}
+
+@media (max-width: 1199.98px) {
+  .navbar-toggler {
+    z-index: 3;
+  }
+
+  .navbar .bi-cart {
+    font-size: 1.6rem;
+  }
+}
+
+
+
+
+
 
 /* === Animations === */
 @keyframes slideInLeft {
@@ -509,6 +550,10 @@ body {
   margin-right: 8px;
 }
 
+
+
+
+
 /* === Appointment Page Wrapper === */
 .appointment-body {
   display: block;
@@ -985,6 +1030,606 @@ body.subscription-page {
 
 
 
+
+
+
+
+
+
+
+/* === Profile Page Styles === */
+.profile-section {
+  background-color: #ffffff;
+  border-radius: 1.2rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1.5rem;
+}
+
+/* Profile header row */
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Profile user block */
+.profile-user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-avatar {
+  width: 70px;
+  height: 70px;
+  background-color: #d6b075;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-avatar i {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+/* User name */
+.profile-user h5 {
+  margin: 0;
+  font-weight: 600;
+  color: #0d1b2a;
+}
+
+/* Profile actions */
+.profile-actions .btn {
+  color: #0d1b2a;
+  font-size: 1.2rem;
+}
+
+.profile-balance {
+  background-color: #d6b075;
+  color: #0d1b2a;
+  font-weight: 600;
+  padding: 0.25rem 1rem;
+  border-radius: 2rem;
+}
+
+/* Accordion overrides */
+.accordion-button {
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #0d1b2a;
+  background-color: #ffffff;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #f9f9f9;
+  color: #0d1b2a;
+  box-shadow: none;
+}
+
+.accordion-body {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Contact & Address Rows */
+.contact-row,
+.address-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.contact-row i,
+.address-row i {
+  margin-right: 0.5rem;
+  color: #0d1b2a;
+}
+
+.address-row {
+  font-weight: 500;
+  color: #0d1b2a;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 576px) {
+  .profile-user {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-avatar {
+    width: 60px;
+    height: 60px;
+  }
+
+  .profile-user h5 {
+    font-size: 1rem;
+  }
+
+  .profile-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+/* === Settings Page Styles === */
+.settings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.settings-balance {
+  background-color: #fff;
+  color: #0d1b2a;
+  padding: 0.25rem 1rem;
+  border-radius: 2rem;
+  font-weight: 600;
+}
+
+.settings-card {
+  background-color: #ffffff;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.settings-card .card-header {
+  background-color: #fff;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #0d1b2a;
+}
+
+.settings-card .list-group-item {
+  border: none;
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+  color: #0d1b2a;
+}
+
+.settings-card .list-group-item .form-check-input:checked {
+  background-color: #0d1b2a;
+  border-color: #0d1b2a;
+}
+
+.settings-card .list-group-item span.text-muted {
+  font-size: 0.95rem;
+}
+
+.settings-card .list-group-item.deactivate {
+  color: red;
+  font-weight: 500;
+}
+
+.accordion-button {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #0d1b2a;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #f9f9f9;
+  color: #0d1b2a;
+  box-shadow: none;
+}
+.settings-details-card-button{
+  background-color: #c6a56f;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 6px 14px;
+  border: none;
+}
+
+
+
+
+
+
+/* === Edit Profile Page Styles === */
+body.profile-page {
+  background-color: #c6a56f;
+  background-image: url('../images/bg_image.png');
+  background-repeat: repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  font-family: 'Poppins', 'Roboto', 'Inter', sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: block !important;
+  align-items: unset !important;
+  justify-content: unset !important;
+  height: auto !important;
+  overflow: auto !important;
+}
+
+.input-borderless {
+  border: none;
+  outline: none;
+  background-color: transparent; /* Optional: matches background */
+  box-shadow: none;              /* Remove Bootstrap shadows */
+}
+
+.navbar {
+  background-color: #0d1b2a;
+}
+
+.navbar .nav-link,
+.navbar .nav-link i {
+  color: #c6a56f !important;
+  font-weight: 500;
+}
+
+
+
+.navbar .badge {
+  background-color: #3272ff;
+}
+
+.profile-section {
+  background-color: #ffffff;
+  border-radius: 1.2rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1.5rem;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-avatar {
+  width: 70px;
+  height: 70px;
+  background-color: #d6b075;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-avatar i {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.profile-user h5 {
+  margin: 0;
+  font-weight: 600;
+  color: #0d1b2a;
+}
+
+.btn-edit-image {
+  background-color: #d6b075;
+  color: #0d1b2a;
+  font-weight: 600;
+  border-radius: 2rem;
+}
+
+.profile-profile-form-label {
+  color: #0d1b2a;
+  font-weight: 600;
+  background-color: white !important;
+}
+
+.form-control {
+  border-radius: 0.75rem;
+  font-style: italic;
+}
+
+.btn-update {
+  background-color: #0d1b2a;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+}
+
+.profile-edit-img-card-button {
+  background-color: #c6a56f;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 6px 14px;
+  border: none;
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  .profile-user {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-avatar {
+    width: 60px;
+    height: 60px;
+  }
+
+  .profile-user h5 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  /* Align avatar icon to the left */
+  .mobile-left-align {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+  }
+
+  /* Align button to the right */
+  .mobile-right-align {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+/* === Cart Page Styles === */
+.cart-box {
+  background-color: #ffffff;
+  border-radius: 1.2rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1.5rem;
+}
+
+.cart-section-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0d1b2a;
+  margin-bottom: 1rem;
+}
+
+.cart-item {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  margin-bottom: 1rem;
+}
+
+.cart-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  color: #0d1b2a;
+}
+
+.cart-item-subtext {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.cart-item-price-badge {
+  background-color: #d6b075;
+  color: #0d1b2a;
+  border-radius: 1rem;
+  padding: 0.25rem 0.75rem;
+  font-weight: 600;
+}
+
+.address-option,
+.payment-option {
+  background-color: #fff;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.address-option input[type="radio"],
+.payment-option input[type="radio"] {
+  accent-color: #0d1b2a;
+}
+
+.new-address-input,
+.comments-input {
+  font-style: italic;
+  border-radius: 0.75rem;
+}
+
+.apply-coupon-btn {
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  padding: 0.25rem 1rem;
+}
+
+.price-summary {
+  font-weight: 500;
+  color: #0d1b2a;
+}
+
+.price-summary .text-success {
+  color: #00aa00 !important;
+}
+
+.price-summary .text-danger {
+  color: red !important;
+}
+
+.checkout-total {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: red;
+}
+
+.terms-check {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  font-weight: 500;
+  color: #0d1b2a;
+}
+
+.checkout-btn {
+  width: 100%;
+  padding: 0.75rem;
+  font-weight: 600;
+  border-radius: 1.5rem;
+  background-color: #0d1b2a;
+  color: #fff;
+}
+
+body.cart-page {
+  display: block !important;
+  align-items: unset !important;
+  justify-content: unset !important;
+  height: auto !important;
+  overflow: auto !important;
+}
+
+/* === Cleaner Listing Page Styles === */
+.cleaner-card {
+  background-color: #fff;
+  border-radius: 1.2rem;
+  padding: 1.5rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cleaner-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cleaner-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #eee;
+  flex-shrink: 0;
+}
+
+.cleaner-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cleaner-details h5 {
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.cleaner-details .rating {
+  color: #8b6f3d;
+  font-weight: 600;
+}
+
+.cleaner-meta {
+  font-size: 0.875rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+.cleaner-icons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-add-to-cart {
+  background-color: #0d1b2a;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.875rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+}
+
+.btn-add-to-cart:hover {
+  background-color: #143a5d;
+}
+
+/* === Name Page Styles === */
+.filter-bar {
+  background-color: #0d1b2a;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-cleaner {
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.card-cleaner img.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.btn-add-cart {
+  background-color: #0d1b2a;
+  color: white;
+  font-weight: 600;
+  font-size: 0.85rem;
+  border-radius: 0.75rem;
+  padding: 0.5rem 1rem;
+}
+
+.badge-cart {
+  background-color: #3272ff;
+  font-size: 0.7rem;
+}
+
+body.subscription-page {
+  display: block;
+  min-height: 100vh;
+  overflow-x: hidden;
+  padding: 0;
+  background-color: #c6a56f;
+  background-image: url('../images/bg_image.png');
+  background-repeat: repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  font-family: 'Poppins', 'Roboto', 'Inter', sans-serif;
+}
+
+
+
+
 /* === OFFERS SECTION === */
 
 /* Background */
@@ -1172,406 +1817,6 @@ body.offer-page {
 }
 
 
-/* === Cart Page Styles === */
-.cart-box {
-  background-color: #ffffff;
-  border-radius: 1.2rem;
-  padding: 1.5rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  margin-bottom: 1.5rem;
-}
-
-.cart-section-title {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #0d1b2a;
-  margin-bottom: 1rem;
-}
-
-.cart-item {
-  background-color: #fff;
-  border-radius: 1rem;
-  padding: 1rem;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-  margin-bottom: 1rem;
-}
-
-.cart-item-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: 600;
-  color: #0d1b2a;
-}
-
-.cart-item-subtext {
-  font-size: 0.95rem;
-  color: #555;
-}
-
-.cart-item-price-badge {
-  background-color: #d6b075;
-  color: #0d1b2a;
-  border-radius: 1rem;
-  padding: 0.25rem 0.75rem;
-  font-weight: 600;
-}
-
-.address-option,
-.payment-option {
-  background-color: #fff;
-  border-radius: 0.75rem;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-}
-
-.address-option input[type="radio"],
-.payment-option input[type="radio"] {
-  accent-color: #0d1b2a;
-}
-
-.new-address-input,
-.comments-input {
-  font-style: italic;
-  border-radius: 0.75rem;
-}
-
-.apply-coupon-btn {
-  border-radius: 2rem;
-  font-size: 0.9rem;
-  padding: 0.25rem 1rem;
-}
-
-.price-summary {
-  font-weight: 500;
-  color: #0d1b2a;
-}
-
-.price-summary .text-success {
-  color: #00aa00 !important;
-}
-
-.price-summary .text-danger {
-  color: red !important;
-}
-
-.checkout-total {
-  font-weight: 700;
-  font-size: 1.25rem;
-  color: red;
-}
-
-.terms-check {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-top: 1rem;
-  font-weight: 500;
-  color: #0d1b2a;
-}
-
-.checkout-btn {
-  width: 100%;
-  padding: 0.75rem;
-  font-weight: 600;
-  border-radius: 1.5rem;
-  background-color: #0d1b2a;
-  color: #fff;
-}
-
-body.cart-page {
-  display: block !important;
-  align-items: unset !important;
-  justify-content: unset !important;
-  height: auto !important;
-  overflow: auto !important;
-}
-
-.cart-kwd-button {
-  background-color: #c6a56f;
-  font-weight: bold;
-  border-radius: 8px;
-  padding: 6px 14px;
-  border: none;
-}
-
-/* === Name Page Styles === */
-.filter-bar {
-  background-color: #0d1b2a;
-  color: white;
-  padding: 0.5rem 1rem;
-  font-weight: 500;
-  border-radius: 0.5rem;
-  margin: 1rem 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.card-cleaner {
-  border-radius: 1rem;
-  padding: 1rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-
-.card-cleaner img.avatar {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-}
-
-.btn-add-cart {
-  background-color: #0d1b2a;
-  color: white;
-  font-weight: 600;
-  font-size: 0.85rem;
-  border-radius: 0.75rem;
-  padding: 0.5rem 1rem;
-}
-
-.badge-cart {
-  background-color: #3272ff;
-  font-size: 0.7rem;
-}
-
-body.subscription-page {
-  display: block;
-  min-height: 100vh;
-  overflow-x: hidden;
-  padding: 0;
-  background-color: #c6a56f;
-  background-image: url('../images/bg_image.png');
-  background-repeat: repeat;
-  background-size: cover;
-  background-blend-mode: multiply;
-  font-family: 'Poppins', 'Roboto', 'Inter', sans-serif;
-}
-
-/* === Settings Page Styles === */
-.settings-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-
-.settings-balance {
-  background-color: #fff;
-  color: #0d1b2a;
-  padding: 0.25rem 1rem;
-  border-radius: 2rem;
-  font-weight: 600;
-}
-
-.settings-card {
-  background-color: #ffffff;
-  border-radius: 1.2rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1rem;
-  overflow: hidden;
-}
-
-.settings-card .card-header {
-  background-color: #fff;
-  border: none;
-  font-weight: 600;
-  font-size: 1rem;
-  color: #0d1b2a;
-}
-
-.settings-card .list-group-item {
-  border: none;
-  padding: 1rem 1.25rem;
-  font-size: 1rem;
-  color: #0d1b2a;
-}
-
-.settings-card .list-group-item .form-check-input:checked {
-  background-color: #0d1b2a;
-  border-color: #0d1b2a;
-}
-
-.settings-card .list-group-item span.text-muted {
-  font-size: 0.95rem;
-}
-
-.settings-card .list-group-item.deactivate {
-  color: red;
-  font-weight: 500;
-}
-
-.accordion-button {
-  font-weight: 600;
-  font-size: 1rem;
-  color: #0d1b2a;
-}
-
-.accordion-button:not(.collapsed) {
-  background-color: #f9f9f9;
-  color: #0d1b2a;
-  box-shadow: none;
-}
-.settings-details-card-button{
-  background-color: #c6a56f;
-  font-weight: bold;
-  border-radius: 8px;
-  padding: 6px 14px;
-  border: none;
-}
-
-
-/* === Edit Profile Page Styles === */
-body.profile-page {
-  background-color: #c6a56f;
-  background-image: url('../images/bg_image.png');
-  background-repeat: repeat;
-  background-size: cover;
-  background-blend-mode: multiply;
-  font-family: 'Poppins', 'Roboto', 'Inter', sans-serif;
-  min-height: 100vh;
-  overflow-x: hidden;
-  display: block !important;
-  align-items: unset !important;
-  justify-content: unset !important;
-  height: auto !important;
-  overflow: auto !important;
-}
-
-.input-borderless {
-  border: none;
-  outline: none;
-  background-color: transparent; /* Optional: matches background */
-  box-shadow: none;              /* Remove Bootstrap shadows */
-}
-
-.navbar {
-  background-color: #0d1b2a;
-}
-
-.navbar .nav-link,
-.navbar .nav-link i {
-  color: #c6a56f !important;
-  font-weight: 500;
-}
-
-
-
-.navbar .badge {
-  background-color: #3272ff;
-}
-
-.profile-section {
-  background-color: #ffffff;
-  border-radius: 1.2rem;
-  padding: 1.5rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  margin-bottom: 1.5rem;
-}
-
-.profile-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.profile-user {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.profile-avatar {
-  width: 70px;
-  height: 70px;
-  background-color: #d6b075;
-  border-radius: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.profile-avatar i {
-  font-size: 2rem;
-  color: #ffffff;
-}
-
-.profile-user h5 {
-  margin: 0;
-  font-weight: 600;
-  color: #0d1b2a;
-}
-
-.btn-edit-image {
-  background-color: #d6b075;
-  color: #0d1b2a;
-  font-weight: 600;
-  border-radius: 2rem;
-}
-
-.profile-profile-form-label {
-  color: #0d1b2a;
-  font-weight: 600;
-  background-color: white !important;
-}
-
-.form-control {
-  border-radius: 0.75rem;
-  font-style: italic;
-}
-
-.btn-update {
-  background-color: #0d1b2a;
-  color: #ffffff;
-  font-weight: 600;
-  border-radius: 0.75rem;
-  padding: 0.75rem;
-}
-
-.profile-edit-img-card-button {
-  background-color: #c6a56f;
-  font-weight: bold;
-  border-radius: 8px;
-  padding: 6px 14px;
-  border: none;
-}
-
-/* Responsive tweaks */
-@media (max-width: 576px) {
-  .profile-user {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .profile-avatar {
-    width: 60px;
-    height: 60px;
-  }
-
-  .profile-user h5 {
-    font-size: 1rem;
-  }
-}
-@media (max-width: 576px) {
-  /* Align avatar icon to the left */
-  .mobile-left-align {
-    margin-left: 0 !important;
-    margin-right: auto !important;
-  }
-
-  /* Align button to the right */
-  .mobile-right-align {
-    margin-left: auto !important;
-    margin-right: 0 !important;
-    display: block;
-  }
-}
-
 
 /* === Help Center Page Styles === */
 
@@ -1596,7 +1841,7 @@ body.profile-page {
       background-size: cover;
       color: white;
       border-radius: 1rem;
-      padding: 6rem 1.5rem;
+      padding: 13.5rem 1.5rem;
       text-align: center;
     }
 
