@@ -972,6 +972,16 @@ body.subscription-page {
   overflow-y: auto;
   display: block;
 }
+.custom-date-input,
+.filter-input select {
+  outline: none !important;
+  box-shadow: none !important;
+  background-clip: padding-box;
+}
+
+.filter-input i {
+  pointer-events: none;
+}
 
 
 
