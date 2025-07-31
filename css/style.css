@@ -1628,6 +1628,101 @@ body.subscription-page {
 }
 
 
+/* === Completed Services Page === */
+
+body.completed-services-page {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: auto !important;
+  display: block !important;
+  align-items: unset !important;
+  justify-content: unset !important;
+  overflow: auto !important;
+
+  background-color: #c6a56f;
+  background-image: url('../images/bg_image.png');
+  background-repeat: repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  font-family: 'Poppins', 'Roboto', 'Inter', sans-serif;
+  padding-top: 80px; /* This is okay if navbar is fixed */
+}
+
+
+/* Tabs */
+.top-tabs {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  border-bottom: 2px solid #ccc;
+  font-weight: 600;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.top-tabs .tab {
+  flex: 1 0 auto;
+  min-width: 33.33%;
+  text-align: center;
+  padding: 1rem 0;
+  border-bottom: 3px solid transparent;
+  color: #444;
+}
+.top-tabs .tab.active {
+  border-bottom: 3px solid #0d1b2a;
+  color: #000;
+}
+.top-tabs::-webkit-scrollbar {
+  display: none;
+}
+.top-tabs {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Card */
+.service-card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin: 1rem;
+  box-shadow: 0 2px 12px rgba(24, 22, 22, 0.05);
+  position: relative;
+}
+.avatar-img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+
+.icon-right {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 80px;
+  height: 80px;
+}
+
+
+/* Button */
+.btn-feedback {
+  background-color: #0d1b2a;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 2rem;
+  display: block;
+  margin: 1.5rem auto;
+}
+.btn-feedback:hover {
+  background-color: #143a5d;
+}
+
+
+
+
+
+
 
 
 /* === OFFERS SECTION === */
