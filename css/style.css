@@ -1,7 +1,6 @@
 /* === Global Styles === */
 body {
-  background-color: #c6a56f;
-  background-image: url('../images/bg_image.png');
+  background-image: url('../images/bg_image1.png');
   background-repeat: repeat;
   background-size: cover;
   background-blend-mode: multiply;
@@ -12,6 +11,7 @@ body {
   justify-content: center;
   overflow: hidden;
 }
+
 .custom-offcanvas {
   background-color: #0d1b2a;
   color: white;
@@ -24,19 +24,27 @@ body {
 .custom-offcanvas .nav-link:hover {
   color: #f1c27d;
 }
+
 .custom-offcanvas .nav-link.active {
   background-color: #ffffff !important;
-  color: #0d1b2a !important;  /* Ensure the text color is visible */
+  color: #0d1b2a !important;
+  /* Ensure the text color is visible */
   border-radius: 999px;
   font-weight: 600;
   padding: 6px 16px;
   display: inline-block;
   text-align: center;
 }
+
 .custom-navbar {
-  position: relative; /* for absolute positioning of center logo */
+  position: relative;
+  /* for absolute positioning of center logo */
   background-color: #0d1b2a;
   min-height: 70px;
+}
+
+.dropdown-item-profile {
+  background-color: #f1c27d;
 }
 
 @media (max-width: 1199.98px) {
@@ -105,12 +113,17 @@ body {
 .signup-page .form-label {
   color: #d6b075;
   font-weight: 600;
-  background-color: #0d1b2a!important;
+  background-color: #0d1b2a !important;
   padding: 6px 12px;
   border-radius: 8px;
   display: inline-block;
 }
+
 .signup-left {
+  background-image: url('../images/bg_image.png');
+  background-repeat: repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
   position: relative;
   width: 35%;
   background-color: #0d1b2a;
@@ -153,12 +166,13 @@ body {
 .btn-left-signup {
   background-color: #3272ff;
   color: #ffffff;
-   padding: 10px 25px;
+  padding: 10px 25px;
   border: none;
   border-radius: 50px;
   margin-top: 20px;
   transition: transform 0.3s ease;
-  width: 120px;;
+  width: 120px;
+  ;
 }
 
 .signup-right {
@@ -394,6 +408,7 @@ body {
   .btn-login {
     width: 100% !important;
   }
+
   .signup-wrapper {
     flex-direction: column;
     width: 95%;
@@ -415,12 +430,12 @@ body {
 
   .btn-left-signup {
     padding: 10px 25px;
-  border: none;
-  border-radius: 50px;
-  margin-top: 20px;
-  transition: transform 0.3s ease;
-  width: 120px;
-  
+    border: none;
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+    width: 120px;
+
   }
 
   .form-label {
@@ -429,7 +444,8 @@ body {
     text-align: left;
   }
 
-  .col-md-6, .col-12 {
+  .col-md-6,
+  .col-12 {
     width: 100% !important;
   }
 
@@ -478,6 +494,7 @@ body {
   .btn-login {
     width: 100% !important;
   }
+
   .signup-wrapper {
     flex-direction: column;
     width: 95%;
@@ -499,12 +516,12 @@ body {
 
   .btn-left-signup {
     padding: 10px 25px;
-  border: none;
-  border-radius: 50px;
-  margin-top: 20px;
-  transition: transform 0.3s ease;
-  width: 120px;
-  
+    border: none;
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+    width: 120px;
+
   }
 
   .form-label {
@@ -513,7 +530,8 @@ body {
     text-align: left;
   }
 
-  .col-md-6, .col-12 {
+  .col-md-6,
+  .col-12 {
     width: 100% !important;
   }
 
@@ -527,11 +545,16 @@ body {
 
 
 /* === Appointment Page Styles === */
+
 .card-custom {
   background-color: #fff;
   border-radius: 12px;
   padding-top: 20px;
   margin: 20px 0;
+}
+
+body.appointment-body .show-more-btn {
+  margin-bottom: 4rem !important;
 }
 
 .btn-dark-blue {
@@ -559,9 +582,7 @@ body {
   display: block;
   height: auto;
   overflow: auto;
-
-  background-color: #c6a56f;
-  background-image: url('../images/bg_image.png');
+  background-image: url('../images/bg_image1.png');
   background-repeat: repeat;
   background-size: cover;
   background-blend-mode: multiply;
@@ -573,16 +594,18 @@ body {
 }
 
 .custom-nav-links {
-  gap: 200px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  gap: 8rem;
 }
+
 
 .custom-nav-links .nav-link {
   font-weight: 500;
   color: #c6a56f !important;
   font-size: 1rem;
+  transition: all 0.3s ease;
 }
 
 .navbar .nav-link i {
@@ -590,6 +613,8 @@ body {
   color: #c6a56f !important;
 
 }
+
+
 
 @media (max-width: 991px) {
   .custom-nav-links {
@@ -608,16 +633,26 @@ body {
 
 .custom-nav-links .nav-link.active {
   background-color: #ffffff !important;
-  color: #0d1b2a !important;  /* ensures the text is visible */
+  color: #0d1b2a !important;
+  /* ensures the text is visible */
   font-weight: 600;
   padding: 0.4rem 1rem;
   border-radius: 0.75rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   display: inline-block;
   line-height: 1.2;
   text-align: center;
 }
 
+.custom-nav-links .nav-link:hover {
+  background-color: #ffffff !important;
+  color: #0d1b2a !important;
+  font-weight: 600;
+  padding: 0.4rem 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
 
 
 .cleaner-card-custom {
@@ -639,8 +674,8 @@ body {
   color: #c6a56f;
   font-weight: 600;
   border-radius: 0.5rem;
-  padding: 0.55rem 4.0rem;  
-  font-size: 1rem; 
+  padding: 0.55rem 4.0rem;
+  font-size: 1rem;
 }
 
 .bg-dark-blue {
@@ -653,6 +688,7 @@ body {
 
 
 @media (max-width: 1024px) {
+
   /* Stack the navbar items vertically */
   .navbar-collapse {
     flex-direction: column;
@@ -688,7 +724,7 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .filter-grid > div {
+  .filter-grid>div {
     flex: 0 0 50%;
     max-width: 50%;
   }
@@ -713,13 +749,16 @@ body {
 }
 
 .btn-dark-blue:hover {
-  background-color: #265fdd; /* Example hover color */
-  color: #ffffff;            /* Optional: change text color */
+  background-color: #265fdd;
+  /* Example hover color */
+  color: #ffffff;
+  /* Optional: change text color */
 }
 
 /* === REMOVE #265fdd ONLY FOR APPOINTMENT PAGE === */
 body.appointment-body .input-group::before {
-  background-color: #d6b075 !important;  /* Tan */
+  background-color: #d6b075 !important;
+  /* Tan */
 }
 
 body.appointment-body .icon-wrapper {
@@ -730,6 +769,9 @@ body.appointment-body .btn-login:hover {
   background-color: #0d1b2a !important;
 }
 
+.bg-tan {
+  background-color: #d6b075;
+}
 
 .filter-btn {
   background-color: #d6b075;
@@ -781,7 +823,7 @@ body.appointment-body .btn-login:hover {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-color: #d6b075;
+  
   border-radius: 2rem;
   padding-right: 2.2rem;
   font-weight: 500;
@@ -802,7 +844,7 @@ input[type="time"] {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-color: #d6b075;
+  
   border-radius: 2rem;
   padding-right: 2.2rem;
   font-weight: 500;
@@ -846,10 +888,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   position: relative;
 }
 
-/* Background for subscription page */
-.bg-tan {
-  background-color: #d6b075;
-}
+
+
 
 /* Top filter buttons */
 .btn-outline-dark {
@@ -897,10 +937,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 /* === Cleaning Subscription Page Styles === */
-.bg-tan {
-  background-color: #d6b075;
-}
-
 .subscription-box {
   background-color: #ffffff;
   border-radius: 1.2rem;
@@ -989,7 +1025,8 @@ body.subscription-page {
   top: 0.5px;
   bottom: 0.5px;
   width: 4px;
-  background-color: #d6b075 !important; /* Tan */
+  background-color: #d6b075 !important;
+  /* Tan */
   border-radius: 3px;
 }
 
@@ -1000,9 +1037,11 @@ body.subscription-page {
   top: 0.5px;
   bottom: 0.5px;
   width: 4px;
-  background-color: #ffffff !important; /* Tan */
+  background-color: #ffffff !important;
+  /* Tan */
   border-radius: 3px;
 }
+
 .day-btn {
   padding: 0.5rem 1.25rem;
   border-radius: 2rem;
@@ -1011,12 +1050,14 @@ body.subscription-page {
   white-space: nowrap;
   transition: background-color 0.2s ease;
 }
+
 body.subscription-page {
   min-height: 100vh;
   height: auto;
   overflow-y: auto;
   display: block;
 }
+
 .custom-date-input,
 .filter-input select {
   outline: none !important;
@@ -1220,7 +1261,8 @@ body.subscription-page {
   color: #0d1b2a;
   box-shadow: none;
 }
-.settings-details-card-button{
+
+.settings-details-card-button {
   background-color: #c6a56f;
   font-weight: bold;
   border-radius: 8px;
@@ -1235,8 +1277,7 @@ body.subscription-page {
 
 /* === Edit Profile Page Styles === */
 body.profile-page {
-  background-color: #c6a56f;
-  background-image: url('../images/bg_image.png');
+  background-image: url('../images/bg_image1.png');
   background-repeat: repeat;
   background-size: cover;
   background-blend-mode: multiply;
@@ -1253,8 +1294,10 @@ body.profile-page {
 .input-borderless {
   border: none;
   outline: none;
-  background-color: transparent; /* Optional: matches background */
-  box-shadow: none;              /* Remove Bootstrap shadows */
+  background-color: transparent;
+  /* Optional: matches background */
+  box-shadow: none;
+  /* Remove Bootstrap shadows */
 }
 
 .navbar {
@@ -1348,6 +1391,16 @@ body.profile-page {
   border: none;
 }
 
+.editable-field {
+    background-color: #f9f9f9 !important;
+    border: 1px solid #007bff !important;
+  }
+
+  .edit-icon.active {
+    color: #007bff !important;
+    cursor: pointer;
+  }
+
 /* Responsive tweaks */
 @media (max-width: 576px) {
   .profile-user {
@@ -1364,7 +1417,9 @@ body.profile-page {
     font-size: 1rem;
   }
 }
+
 @media (max-width: 576px) {
+
   /* Align avatar icon to the left */
   .mobile-left-align {
     margin-left: 0 !important;
@@ -1619,8 +1674,7 @@ body.subscription-page {
   min-height: 100vh;
   overflow-x: hidden;
   padding: 0;
-  background-color: #c6a56f;
-  background-image: url('../images/bg_image.png');
+  background-image: url('../images/bg_image1.png');
   background-repeat: repeat;
   background-size: cover;
   background-blend-mode: multiply;
@@ -1638,14 +1692,13 @@ body.completed-services-page {
   align-items: unset !important;
   justify-content: unset !important;
   overflow: auto !important;
-
-  background-color: #c6a56f;
-  background-image: url('../images/bg_image.png');
+  background-image: url('../images/bg_image1.png');
   background-repeat: repeat;
   background-size: cover;
   background-blend-mode: multiply;
   font-family: 'Poppins', 'Roboto', 'Inter', sans-serif;
-  padding-top: 80px; /* This is okay if navbar is fixed */
+  padding-top: 80px;
+  /* This is okay if navbar is fixed */
 }
 
 
@@ -1659,6 +1712,7 @@ body.completed-services-page {
   overflow-x: auto;
   white-space: nowrap;
 }
+
 .top-tabs .tab {
   flex: 1 0 auto;
   min-width: 33.33%;
@@ -1667,13 +1721,17 @@ body.completed-services-page {
   border-bottom: 3px solid transparent;
   color: #444;
 }
+
 .top-tabs .tab.active {
   border-bottom: 3px solid #0d1b2a;
   color: #000;
+  background-color: rgba(6, 7, 7, 0.178);
 }
+
 .top-tabs::-webkit-scrollbar {
   display: none;
 }
+
 .top-tabs {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -1688,6 +1746,7 @@ body.completed-services-page {
   box-shadow: 0 2px 12px rgba(24, 22, 22, 0.05);
   position: relative;
 }
+
 .avatar-img {
   height: 70px;
   width: 70px;
@@ -1714,6 +1773,7 @@ body.completed-services-page {
   display: block;
   margin: 1.5rem auto;
 }
+
 .btn-feedback:hover {
   background-color: #143a5d;
 }
@@ -1728,23 +1788,24 @@ body.completed-services-page {
 /* === OFFERS SECTION === */
 
 /* Background */
-body {
-  background-color: #c6a56f;
-}
+
 
 /* Navbar styling */
 .navbar {
   background-color: #001122;
 }
+
 .navbar-brand {
   font-size: 24px;
   font-weight: bold;
   color: #fff !important;
 }
+
 .nav-link {
   color: #fcd581 !important;
   font-weight: 500;
 }
+
 .nav-link.active {
   color: #ffffff !important;
 }
@@ -1764,6 +1825,7 @@ body {
   border-radius: 10px 0 0 10px;
   border: 1px solid #ccc;
 }
+
 .input-group .btn {
   border-radius: 0 10px 10px 0;
   background-color: #ccc;
@@ -1823,6 +1885,7 @@ body {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -1863,7 +1926,7 @@ body {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
 }
 
-.offer-details-card-button{
+.offer-details-card-button {
   background-color: #c6a56f;
   font-weight: bold;
   border-radius: 8px;
@@ -1872,7 +1935,8 @@ body {
 }
 
 body.offer-page {
-  display: block;         /* Reset to default layout */
+  display: block;
+  /* Reset to default layout */
   align-items: unset;
   justify-content: unset;
   height: auto;
@@ -1905,106 +1969,116 @@ body.offer-page {
 }
 
 .offer-details-card-button:hover {
-  background-color: #c6a56f; /* same as default */
-  color: inherit;            /* maintain current text color */
-  transform: none;           /* prevent any scaling or animation */
-  box-shadow: none;          /* prevent any hover shadow */
+  background-color: #c6a56f;
+  /* same as default */
+  color: inherit;
+  /* maintain current text color */
+  transform: none;
+  /* prevent any scaling or animation */
+  box-shadow: none;
+  /* prevent any hover shadow */
 }
 
 
 
 /* === Help Center Page Styles === */
 
- .search-bar {
-      background-color: #fff;
-      border-radius: 12px;
-      padding: 0.75rem 1rem;
-      display: flex;
-      align-items: center;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    }
+.search-bar {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
 
-    .search-bar i {
-      font-size: 1.2rem;
-      color: #0d1b2a;
-      margin-right: 0.5rem;
-    }
+.search-bar i {
+  font-size: 1.2rem;
+  color: #0d1b2a;
+  margin-right: 0.5rem;
+}
 
-    .help-hero {
-      background: linear-gradient(to bottom right, rgba(13, 46, 82, 0.5), rgba(2, 32, 65, 0.6)),
-        url('../images/contactus_banner.jpg') no-repeat center center;
-      background-size: cover;
-      color: white;
-      border-radius: 1rem;
-      padding: 13.5rem 1.5rem;
-      text-align: center;
-    }
+.help-hero {
+  background: linear-gradient(to bottom right, rgba(13, 46, 82, 0.5), rgba(2, 32, 65, 0.6)),
+    url('../images/contactus_banner.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  border-radius: 1rem;
+  padding: 13.5rem 1.5rem;
+  text-align: center;
+}
 
-    .help-hero h2 {
-      font-weight: bold;
-      font-size: 1.5rem;
-      color: #f1c27d;
-    }
+.help-hero h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #f1c27d;
+}
 
-    .help-hero h4 {
-      font-weight: 500;
-      color: #f1c27d;
-      margin-bottom: 0.75rem;
-    }
+.help-hero h4 {
+  font-weight: 500;
+  color: #f1c27d;
+  margin-bottom: 0.75rem;
+}
 
-    .contact-card {
-      background: white;
-      border-radius: 1rem;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    }
+.contact-card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
 
-    .contact-item {
-      padding: 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-top: 1px solid #eee;
-    }
+.contact-item {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+}
 
-    .contact-item:first-of-type {
-      border-top: none;
-    }
+.contact-item:first-of-type {
+  border-top: none;
+}
 
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      padding: 1rem 0;
-    }
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
 
-    .social-icons i {
-      font-size: 1.5rem;
-    }
+.social-icons i {
+  font-size: 1.5rem;
+}
 
-    .icon-dark-primary {
-      color: #0d1b2a !important;
-    }
+.icon-dark-primary {
+  color: #0d1b2a !important;
+}
 
-    @media (max-width: 576px) {
-      .contact-item {
-        flex-direction: row;
-        justify-content: flex-start;
-        gap: 1rem;
-        text-align: left;
-      }
+.contact-item a {
+  color: #000;
+  /* or your preferred color */
+  text-decoration: none;
+}
 
-      .contact-item span {
-        flex-grow: 1;
-        text-align: center;
-      }
+@media (max-width: 576px) {
+  .contact-item {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+    text-align: left;
+  }
 
-      .help-hero {
-        padding: 4rem 1rem;
-      }
+  .contact-item span {
+    flex-grow: 1;
+    text-align: center;
+  }
 
-      .search-bar {
-        flex-direction: row;
-        justify-content: center;
-        text-align: center;
-      }
-    }
+  .help-hero {
+    padding: 4rem 1rem;
+  }
+
+  .search-bar {
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+}

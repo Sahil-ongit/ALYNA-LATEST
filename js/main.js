@@ -134,3 +134,67 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// === Completed Services Specific Logic ===
+
+function showTab(tabName) {
+  // Toggle active class on tabs
+  document.querySelectorAll('.top-tabs .tab').forEach(tab => {
+    tab.classList.remove('active');
+  });
+
+  if (tabName === 'current') {
+    document.querySelector('.top-tabs .tab:nth-child(1)').classList.add('active');
+    document.getElementById('current-services').style.display = 'block';
+    document.getElementById('completed-services').style.display = 'none';
+  } else {
+    document.querySelector('.top-tabs .tab:nth-child(2)').classList.add('active');
+    document.getElementById('completed-services').style.display = 'block';
+    document.getElementById('current-services').style.display = 'none';
+  }
+}
+
+
+// === Edit Profile Logic ===
+
+document.querySelectorAll('.edit-icon').forEach(icon => {
+  icon.addEventListener('click', () => {
+    const targetId = icon.getAttribute('data-target');
+    const field = document.getElementById(targetId);
+
+    if (field.hasAttribute('readonly')) {
+      field.removeAttribute('readonly');
+      field.classList.add('editable-field');
+      icon.classList.add('active');
+      field.focus();
+    } else {
+      field.setAttribute('readonly', true);
+      field.classList.remove('editable-field');
+      icon.classList.remove('active');
+    }
+  });
+});
+
+
+const editBtn = document.getElementById("editImageBtn");
+const fileInput = document.getElementById("profileImageInput");
+const previewDiv = document.getElementById("profileImagePreview");
+
+editBtn.addEventListener("click", () => {
+  fileInput.click();
+});
+
+fileInput.addEventListener("change", (event) => {
+  const file = event.target.files[0];
+  if (file && file.type.startsWith("image/")) {
+    const reader = new FileReader();
+    reader.onload = function (e) {
+      previewDiv.innerHTML = `
+  <img src="${e.target.result}" 
+       class="rounded-circle" 
+       style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+`;
+
+    };
+    reader.readAsDataURL(file);
+  }
+});
